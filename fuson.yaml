@@ -1,0 +1,10 @@
+version: 1.0
+runtime: dockerfile
+build:
+  dockerfile: ./Dockerfile
+run:
+  env:
+    - name: FOO
+      value: bar
+  network:
+    port: 80
